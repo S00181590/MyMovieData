@@ -1,0 +1,19 @@
+<h2 class="ui grey header">
+  <div class="content">
+   Movie Search
+  </div>
+</h2>
+<form class="ui form">
+  <div class="field">
+    <input type="text" name="movie-name" placeholder="Enter Movie Name" #movieName>
+  </div>
+  <button class="ui button primary" (click)="getMovieDetails(movieName.value)" type="submit">Submit</button>
+</form>
+<div *ngIf="movieData" class="ui raised segment">
+  <h3 *ngIf="movieData">Movie: {{movieData.Title}}</h3>
+   <img *ngIf="movieData" src={{movieData.Poster}} [style.height.px]='imageHeight'>
+   <h3 *ngIf="movieData">Year Released: {{movieData.Released}}</h3>
+   <h3 *ngIf="movieData">Rated: {{ movieData.Rated }}</h3>
+   <h3 *ngIf="movieData">Rated: {{ movieData.Plot }}</h3>
+   <h3 *ngIf="movieData">Rated: {{ movieData.Genre }}</h3>
+</div>
