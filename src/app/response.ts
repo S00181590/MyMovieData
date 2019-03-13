@@ -5,4 +5,5 @@ export interface Response {
     Rated: string;
     Genre: string;
     Plot: string;
+    Runtime: string;
 }

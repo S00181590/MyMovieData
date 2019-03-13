@@ -8,7 +8,7 @@ import {catchError, tap} from 'rxjs/operators';
 })
 export class MyMovieDataService {
 
-  private _siteURL = 'http://www.omdbapi.com/?t=';
+  private _siteURL = 'https://www.omdbapi.com/?t=';
   private _key = '&apikey=c27974ab';
 
   constructor(private _http:HttpClient) { }

@@ -14,6 +14,7 @@
    <img *ngIf="movieData" src={{movieData.Poster}} [style.height.px]='imageHeight'>
    <h3 *ngIf="movieData">Year Released: {{movieData.Released}}</h3>
    <h3 *ngIf="movieData">Rated: {{ movieData.Rated }}</h3>
-   <h3 *ngIf="movieData">Rated: {{ movieData.Plot }}</h3>
-   <h3 *ngIf="movieData">Rated: {{ movieData.Genre }}</h3>
+   <h3 *ngIf="movieData">Plot: {{ movieData.Plot }}</h3>
+   <h3 *ngIf="movieData">Genre: {{ movieData.Genre }}</h3>
+   <h3 *ngIf="movieData">Genre: {{ movieData.Runtime }}</h3>
 </div>
